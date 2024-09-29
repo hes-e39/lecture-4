@@ -1,6 +1,8 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
+import svgr from 'vite-plugin-svgr';
+
 import packageJSON from './package.json';
 
 export default ({ mode }) => {
@@ -20,6 +22,7 @@ export default ({ mode }) => {
                     initialIsOpen: false,
                 },
             }),
+            svgr(),
         ],
     });
 };
