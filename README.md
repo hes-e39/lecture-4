@@ -12,17 +12,12 @@ TypeScript
 - Mapped types
 - Template literal types
 
-TypeScript & React
-- `.tsx` extension and enabling
-- Component prop interfaces
-
-Styling
-- Flexbox
-- TailwindCSS
+TypeScript & React & TailwindCSS - Chessboard example
 
 ## Narrowing
 
 More techniques to help with type narrowing
+
 ### Type Predicates
 
 Sometimes you want more direct control over how types change throughout your code. To define a user-defined type guard, we simply need to define a function whose return type is a type predicate:
@@ -347,7 +342,25 @@ type Num = Flatten<number>; // number
 
 
 
-# TypeScript & React
+# TypeScript & React & TailwindCSS - Chessboard example
+
+## Run example
 
 Run `npm install` to install the dependencies and then `npm run dev` to start the dev server.
+
+## TailwindCSS
+
+[TailwindCSS](https://tailwindcss.com/) is a utility first CSS framework for building modern web applications. It is highly customizable allowing for developers to implement their own design system. TailwindCSS allows for handling of hover, focus, and other states with ease. 
+
+- [colors](https://tailwindcss.com/docs/customizing-colors)
+- [spacing](https://tailwindcss.com/docs/customizing-spacing)
+
+TailwindCSS can be customized by modifying the `tailwind.config.js` file.
+
+## React & TypeScript
+
+Change `.jsx` to `.tsx` extension will enable TS to do type checking on the JSX React components. 
+
+- [React cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/basic_type_example)
+
 
