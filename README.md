@@ -9,8 +9,6 @@ TypeScript
 - Index signatures
 - Utility types
 - Conditional types
-- Mapped types
-- Template literal types
 
 TypeScript & React & TailwindCSS - Chessboard example
 
@@ -284,7 +282,7 @@ type NoCircles = Exclude<Shape, { kind: "circle" }> // { kind: "square"; x: numb
 type Triangle = Extract<Shape, { kind: "triangle" }> // { kind: "triangle"; x: number; y: number }
 ```
 
-### NonNullable<Type>
+### `NonNullable<Type>`
 
 Constructs a type by excluding null and undefined from Type.
 
@@ -335,14 +333,9 @@ type Str = Flatten<string[]>; // string
 type Num = Flatten<number>; // number
 ```
 
-## Mapped Types
-
-
-## Template Literal Types
-
-
-
 # TypeScript & React & TailwindCSS - Chessboard example
+
+<img title="Chessboard example" alt="Chessboard example" height="500px" src="./public/example.png">
 
 ## Run example
 
